@@ -20,7 +20,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Bolivia plugs into Cuba as an app:
+    
+    Cuba.plugin Bolivia
+
+And you can call its methods from within your Cuba instance:
+
+    on 'non-existent-page' do
+      raise404
+    end
+    
 
 ## Development
 
