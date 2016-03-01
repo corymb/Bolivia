@@ -6,11 +6,11 @@ module Bolivia
     SecureRandom.hex(50)
   end
 
-  def raise404(message='Page not found.')
-    # Renders views/404.mote if it exists;
+  def raise404(message='Page not found.', template='views/404.mote')
+    # Renders template if it exists (defaults to 'views/404.mote')
     # otherwise returns 'page not found'
     res.status = 404
-    if File.exist?('views/404.mote')
+    if File.exist?(template)
       res.write view("404")
     else
       res.write message
