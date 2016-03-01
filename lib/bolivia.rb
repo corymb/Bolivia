@@ -1,5 +1,7 @@
 require "bolivia/version"
 
 module Bolivia
-  # Your code goes here...
+  def generate_secret_key
+    SecureRandom.hex(50)
+  end
 end
