@@ -20,7 +20,8 @@ module Bolivia
 
   def to_json(data)
     # Returns data as a JSON response:
-    res.headers["Content-Type"] = "application/json; charset=utf-8"
+    content_type = "application/json; charset=utf-8"
+    res.headers["Content-Type"] = content_type
     res.write data.to_json
   end
 end
