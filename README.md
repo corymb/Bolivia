@@ -30,6 +30,11 @@ And you can call its methods from within your Cuba instance:
       raise404
     end
     
+Or via the REPL:
+    
+    pry -r bolivia
+
+    Bolivia.generate_secret_key
 
 ## Development
 
